@@ -1,10 +1,10 @@
 #====================================================================================
-#NAME: exerciceDHCP2.ps1
+#NAME: exerciceDHCP3.ps1
 #AUTHOR: MANGIN Pierre
 #DATE: 24/03/2023
 #
 #VERSION 1.0
-#COMMENTS: Script permettant la création d'etendues DHCP + ladresse IP et le nom du domaine
+#COMMENTS: Script permettant la création d'etendues DHCP + ladresse IP et le nom du domaine tout ceci en boite de dialogues
 #Requires -Version 2.0
 #====================================================================================
 
