@@ -18,6 +18,7 @@ $n = 0
 while($n -ne $execu)
 {
 $n = $n + 1
+}
 
 # Demander le nom de l'étendue DHCP
 $nomEtendue = [Microsoft.VisualBasic.Interaction]::InputBox("Nom de l'étendue DHCP","Entrez le nom de l'étendue DHCP","")
