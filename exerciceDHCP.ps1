@@ -30,7 +30,8 @@ Write-Host "Adresse de passerelle : $adressePasserelle"
 $confirmation = Read-Host "Les informations sont-elles correctes ? (O/N)"
 if ($confirmation.ToLower() -eq "o") {
   # Créer l'étendue DHCP avec les informations saisies
-  Add-DhcpServerv4Scope -Name $nomEtendue -StartRange $premiereAdresse -EndRange $derniereAdresse -SubnetMask $masqueSousReseau -ScopeId $adresseReseau -Router $adressePasserelle
+  Add-DhcpServerv4Scope -Name $nomEtendue -StartRange $premiereAdresse -EndRange $derniereAdresse -SubnetMask $masqueSousReseau
+  Set-DhcpServerv4OptionValue -ScopeID $adresseReseau -Router $adressePasserelle
   Write-Host "L'étendue DHCP a été créée avec succès."
 }
 else {
