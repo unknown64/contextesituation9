@@ -11,11 +11,11 @@
 [void][System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic')
 
 
-$execu = [Microsoft.VisualBasic.Interaction]::InputBox("Combien de plages voulez-vous créer? ")
+$exe = [Microsoft.VisualBasic.Interaction]::InputBox("Combien de plages voulez-vous créer? ")
 
 # Création d'une variable qui permettra de réguler le nombre d'éxécution du script
 $n = 0
-while($n -ne $execu)
+while($n -ne $exe)
 {
 $n = $n + 1
 }
